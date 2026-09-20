@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="花开花谢花满天电视剧官方网站，提供剧情简介、演员表、分集剧情、播出时间及观看指南。全方位解析这部经典古装仙侠剧的精彩看点。">
+    <meta name="keywords" content="花开花谢花满天电视剧,花开花谢花满天,花开花谢花满天剧情,花开花谢花满天演员,花开花谢花满天观看">
+    <title>花开花谢花满天电视剧-剧情简介、演员表与观看指南</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #6a1b9a;
+            --primary-light: #9c4dcc;
+            --accent-color: #ffca28;
+            --text-main: #333333;
+            --text-secondary: #666666;
+            --bg-body: #f9f9f9;
+            --bg-card: #ffffff;
+            --spacing-unit: 16px;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans SC", sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        /* Utility */
+        .container {
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section-title {
+            font-size: 1.75rem;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-unit);
+            padding-bottom: 10px;
+            border-bottom: 2px solid var(--primary-light);
+            display: inline-block;
+        }
+
+        /* Header */
+        header {
+            background-color: var(--bg-card);
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--primary-color);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .logo span {
+            color: var(--text-main);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            font-weight: 500;
+            font-size: 1rem;
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .header-actions button {
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            padding: 8px 20px;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 0.9rem;
+            transition: background 0.3s;
+        }
+
+        .header-actions button:hover {
+            background-color: var(--primary-light);
+        }
+
+        /* Hero Section */
+        .hero {
+            position: relative;
+            height: 500px;
+            background: linear-gradient(to right, rgba(0,0,0,0.7), rgba(0,0,0,0.3)), url('https://picsum.photos/seed/flower/1920/600') no-repeat center center/cover;
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 600px;
+        }
+
+        .hero-tag {
+            background-color: var(--accent-color);
+            color: #333;
+            padding: 4px 8px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            display: inline-block;
+            margin-bottom: 16px;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 16px;
+            line-height: 1.2;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            margin-bottom: 24px;
+            opacity: 0.9;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 16px;
+        }
+
+        .btn {
+            padding: 12px 30px;
+            border-radius: 6px;
+            font-weight: bold;
+            cursor: pointer;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .btn-primary {
+            background-color: var(--primary-color);
+            color: white;
+            border: 2px solid var(--primary-color);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--primary-light);
+            border-color: var(--primary-light);
+        }
+
+        .btn-outline {
+            background-color: transparent;
+            color: white;
+            border: 2px solid white;
+        }
+
+        .btn-outline:hover {
+            background-color: white;
+            color: var(--text-main);
+        }
+
+        /* Info Grid */
+        .info-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 24px;
+            margin-top: -60px;
+            position: relative;
+            z-index: 10;
+        }
+
+        .card {
+            background: var(--bg-card);
+            border-radius: 8px;
+            padding: 24px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+        }
+
+        .info-meta {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 16px;
+            margin-bottom: 20px;
+        }
+
+        .meta-item strong {
+            display: block;
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+            margin-bottom: 4px;
+        }
+
+        .meta-item span {
+            font-weight: 500;
+        }
+
+        .synopsis h3 {
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+        }
+
+        .synopsis p {
+            color: var(--text-secondary);
+            text-align: justify;
+        }
+
+        /* Cast Section */
+        .cast-section {
+            padding: 48px 0;
+        }
+
+        .cast-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 24px;
+        }
+
+        .cast-card {
+            background: var(--bg-card);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+            transition: transform 0.3s;
+            text-align: center;
+        }
+
+        .cast-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .cast-img {
+            width: 100%;
+            height: 240px;
+            object-fit: cover;
+            background-color: #eee;
+        }
+
+        .cast-info {
+            padding: 12px;
+        }
+
+        .cast-name {
+            font-weight: bold;
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .cast-role {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Episodes & Rankings */
+        .content-split {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 24px;
+            margin-top: 32px;
+        }
+
+        .list-group {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+        }
+
+        .list-item {
+            display: flex;
+            align-items: center;
+            background: var(--bg-card);
+            padding: 16px;
+            border-radius: 6px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.03);
+            transition: background 0.2s;
+        }
+
+        .list-item:hover {
+            background-color: #f5f5f5;
+        }
+
+        .episode-num {
+            width: 40px;
+            height: 40px;
+            background-color: var(--primary-light);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            margin-right: 16px;
+            flex-shrink: 0;
+        }
+
+        .episode-info {
+            flex: 1;
+        }
+
+        .episode-title {
+            font-weight: 500;
+            display: block;
+            margin-bottom: 4px;
+        }
+
+        .episode-desc {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        .episode-tag {
+            font-size: 0.75rem;
+            padding: 2px 8px;
+            border-radius: 12px;
+            background-color: #eee;
+            color: #666;
+        }
+
+        .ranking-item {
+            display: flex;
+            align-items: center;
+            padding: 12px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .rank-num {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: var(--accent-color);
+            margin-right: 16px;
+            width: 30px;
+            text-align: center;
+        }
+
+        .rank-content h4 {
+            font-size: 1rem;
+            margin-bottom: 4px;
+        }
+
+        .rank-content p {
+            font-size: 0.85rem;
+            color: var(--text-secondary);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #2c2c2c;
+            color: #ccc;
+            padding: 48px 0 24px;
+            margin-top: 48px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 32px;
+            margin-bottom: 32px;
+        }
+
+        .footer-col h4 {
+            color: white;
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 10px;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .copyright {
+            text-align: center;
+            padding-top: 24px;
+            border-top: 1px solid #444;
+            font-size: 0.9rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .header-inner {
+                flex-direction: column;
+                height: auto;
+                padding: 16px 0;
+                gap: 16px;
+            }
+
+            nav ul {
+                gap: 16px;
+                font-size: 0.9rem;
+            }
+
+            .hero {
+                height: 400px;
+                text-align: center;
+            }
+
+            .hero-content {
+                margin: 0 auto;
+            }
+
+            .hero-buttons {
+                justify-content: center;
+            }
+
+            .info-grid, .content-split {
+                grid-template-columns: 1fr;
+            }
+
+            .info-meta {
+                grid-template-columns: 1fr;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container header-inner">
+            <a href="#" class="logo">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M2 12h20M4.93 4.93l14.14 14.14M4.93 19.07L19.07 4.93"/></svg>
+                <span>花开花谢花满天</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#">首页</a></li>
+                    <li><a href="#intro">剧情介绍</a></li>
+                    <li><a href="#cast">主要演员</a></li>
+                    <li><a href="#episodes">分集剧情</a></li>
+                    <li><a href="#rank">热门榜单</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <button onclick="alert('请访问官方授权平台观看')">立即观看</button>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="container hero-content">
+                <span class="hero-tag">古装 / 仙侠 / 爱情</span>
+                <h1>花开花谢花满天</h1>
+                <p>一场跨越生死的绝美爱恋，一段关于救赎与宿命的传奇故事。当繁花落尽，真爱是否依旧？</p>
+                <div class="hero-buttons">
+                    <a href="#intro" class="btn btn-primary">查看详情</a>
+                    <a href="#cast" class="btn btn-outline">认识演员</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Main Content Grid -->
+        <div class="container info-grid">
+            <!-- Left Column: Intro & Synopsis -->
+            <section id="intro" class="card synopsis">
+                <h2 class="section-title">剧情简介</h2>
+                <div class="info-meta">
+                    <div class="meta-item">
+                        <strong>类型</strong>
+                        <span>古装、仙侠、爱情</span>
+                    </div>
+                    <div class="meta-item">
+                        <strong>导演</strong>
+                        <span>张某某</span>
+                    </div>
+                    <div class="meta-item">
+                        <strong>主演</strong>
+                        <span>李某某、王某某</span>
+                    </div>
+                    <div class="meta-item">
+                        <strong>集数</strong>
+                        <span>36集</span>
+                    </div>
+                </div>
+                <h3>故事梗概</h3>
+                <p>
+                    电视剧《花开花谢花满天》以唯美的东方古典美学为基调，讲述了仙界与凡间交织的凄美爱情故事。主角在命运的洪流中身不由己，为了守护心中所爱，不惜与天命抗争。剧中不仅有惊心动魄的打斗场面，更有细腻入微的情感刻画。
+                </p>
+                <br>
+                <p>
+                    故事从花开之时开始，随着花瓣的飘落，命运的齿轮开始转动。男主角历经磨难，在寻找真相的过程中逐渐成长；女主角则面临着生与死的抉择。两人在误会与和解中，共同谱写了一曲荡气回肠的乐章。
+                </p>
+            </section>
+
+            <!-- Right Column: Quick Links & Tips -->
+            <aside class="card">
+                <h2 class="section-title">观看指南</h2>
+                <ul style="display: flex; flex-direction: column; gap: 16px;">
+                    <li>
+                        <a href="#" style="display: flex; align-items: center; gap: 10px;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                            <span>如何选择正版播放平台？</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="display: flex; align-items: center; gap: 10px;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                            <span>角色关系图解</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="display: flex; align-items: center; gap: 10px;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                            <span>经典台词欣赏</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" style="display: flex; align-items: center; gap: 10px;">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polygon points="10 8 16 12 10 16 10 8"/></svg>
+                            <span>幕后花絮与拍摄花絮</span>
+                        </a>
+                    </li>
+                </ul>
+                <div style="margin-top: 24px; padding: 16px; background-color: #f3e5f5; border-radius: 6px;">
+                    <h4 style="color: var(--primary-color); margin-bottom: 8px;">温馨提示</h4>
+                    <p style="font-size: 0.9rem; color: #555;">请支持正版影视作品，尊重创作者的劳动成果。本页面仅提供剧情介绍与资讯服务。</p>
+                </div>
+            </aside>
+        </div>
+
+        <!-- Cast Section -->
+        <section id="cast" class="cast-section container">
+            <h2 class="section-title">主要演员</h2>
+            <div class="cast-grid">
+                <article class="cast-card">
+                    <img src="https://picsum.photos/seed/actor1/200/300" alt="男主角" class="cast-img">
+                    <div class="cast-info">
+                        <div class="cast-name">李逍遥</div>
+                        <div class="cast-role">饰演：墨尘</div>
+                    </div>
+                </article>
+                <article class="cast-card">
+                    <img src="https://picsum.photos/seed/actor2/200/300" alt="女主角" class="cast-img">
+                    <div class="cast-info">
+                        <div class="cast-name">赵灵儿</div>
+                        <div class="cast-role">饰演：花千骨</div>
+                    </div>
+                </article>
+                <article class="cast-card">
+                    <img src="https://picsum.photos/seed/actor3/200/300" alt="配角" class="cast-img">
+                    <div class="cast-info">
+                        <div class="cast-name">林月如</div>
+                        <div class="cast-role">饰演：林婉儿</div>
+                    </div>
+                </article>
+                <article class="cast-card">
+                    <img src="https://picsum.photos/seed/actor4/200/300" alt="配角" class="cast-img">
+                    <div class="cast-info">
+                        <div class="cast-name">萧峰</div>
+                        <div class="cast-role">饰演：玄天</div>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- Episodes & Rankings Split -->
+        <div class="container content-split">
+            <!-- Episodes List -->
+            <section id="episodes">
+                <h2 class="section-title">分集剧情</h2>
+                <div class="list-group">
+                    <a href="#" class="list-item">
+                        <div class="episode-num">1</div>
+                        <div class="episode-info">
+                            <span class="episode-title">花落凡尘</span>
+                            <span class="episode-desc">主角初入凡间，命运的齿轮悄然转动。</span>
+                        </div>
+                        <span class="episode-tag">更新</span>
+                    </a>
+                    <a href="#" class="list-item">
+                        <div class="episode-num">2</div>
+                        <div class="episode-info">
+                            <span class="episode-title">缘起花开</span>
+                            <span class="episode-desc">两人在花海中初遇，结下不解之缘。</span>
+                        </div>
+                        <span class="episode-tag">热门</span>
+                    </a>
+                    <a href="#" class="list-item">
+                        <div class="episode-num">3</div>
+                        <div class="episode-info">
+                            <span class="episode-title">暗流涌动</span>
+                            <span class="episode-desc">仙界阴谋初现，主角陷入危机。</span>
+                        </div>
+                    </a>
+                    <a href="#" class="list-item">
+                        <div class="episode-num">4</div>
+                        <div class="episode-info">
+                            <span class="episode-title">生死抉择</span>
+                            <span class="episode-desc">为了守护爱人，主角决定对抗宿命。</span>
+                        </div>
+                    </a>
+                    <a href="#" class="list-item">
+                        <div class="episode-num">5</div>
+                        <div class="episode-info">
+                            <span class="episode-title">重逢</span>
+                            <span class="episode-desc">历经磨难后，两人在废墟中重逢。</span>
+                        </div>
+                    </a>
+                </div>
+            </section>
+
+            <!-- Rankings -->
+            <section id="rank">
+                <h2 class="section-title">热门看点</h2>
+                <div class="list-group">
+                    <div class="ranking-item">
+                        <div class="rank-num">1</div>
+                        <div class="rank-content">
+                            <h4>结局大反转</h4>
+                            <p>最后一集的剧情反转令人意想不到。</p>
+                        </div>
+                    </div>
+                    <div class="ranking-item">
+                        <div class="rank-num">2</div>
+                        <div class="rank-content">
+                            <h4>唯美打戏</h4>
+                            <p>特效制作精良，动作设计流畅。</p>
+                        </div>
+                    </div>
+                    <div class="ranking-item">
+                        <div class="rank-num">3</div>
+                        <div class="rank-content">
+                            <h4>OST推荐</h4>
+                            <p>主题曲《花开》深入人心。</p>
+                        </div>
+                    </div>
+                    <div class="ranking-item">
+                        <div class="rank-num">4</div>
+                        <div class="rank-content">
+                            <h4>配角高光时刻</h4>
+                            <p>反派的塑造同样精彩。</p>
+                        </div>
+                    </div>
+                    <div class="ranking-item">
+                        <div class="rank-num">5</div>
+                        <div class="rank-content">
+                            <h4>服装造型</h4>
+                            <p>每一套服装都极具东方韵味。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h4>关于本站</h4>
+                    <p style="font-size: 0.9rem; line-height: 1.8;">
+                        本站旨在为观众提供关于电视剧《花开花谢花满天》的全面资讯与观看指南。我们致力于整理最准确的剧情信息和最优质的观看渠道推荐。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h4>快速导航</h4>
+                    <ul>
+                        <li><a href="#">首页</a></li>
+                        <li><a href="#">剧情介绍</a></li>
+                        <li><a href="#">演员表</a></li>
+                        <li><a href="#">分集剧情</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>观看支持</h4>
+                    <ul>
+                        <li><a href="#">正版平台推荐</a></li>
+                        <li><a href="#">会员权益介绍</a></li>
+                        <li><a href="#">设备兼容性</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>联系我们</h4>
+                    <ul>
+                        <li>合作联系：contact@example.com</li>
+                        <li>版权声明：Copyright © 2023</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>本页面内容仅供展示与资讯服务，不提供实际视频播放。所有影视内容版权归原制作方所有。</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
