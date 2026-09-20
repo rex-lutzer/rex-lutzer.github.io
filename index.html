@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="雨伞选购指南与品牌评测，涵盖透明伞、长柄伞、晴雨两用伞等多种类型，提供材质解析、防晒指数测试及雨天出行防护建议。">
+    <meta name="keywords" content="打伞, 雨伞, 雨具, 防晒伞, 透明伞, 长柄伞">
+    <title>打伞-雨具选购指南与防晒防护大全</title>
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-color: #007AFF;
+            --primary-dark: #0056b3;
+            --text-main: #1d1d1f;
+            --text-secondary: #86868b;
+            --bg-body: #f5f5f7;
+            --bg-card: #ffffff;
+            --border-radius: 12px;
+            --shadow-sm: 0 2px 8px rgba(0,0,0,0.04);
+            --shadow-md: 0 8px 24px rgba(0,0,0,0.08);
+            --spacing-unit: 16px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            background-color: var(--bg-body);
+            color: var(--text-main);
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.2s;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        /* Header */
+        header {
+            background-color: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+            padding: 16px 0;
+        }
+
+        .header-inner {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 20px;
+            font-weight: 700;
+            color: var(--text-main);
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .logo svg {
+            width: 24px;
+            height: 24px;
+            fill: var(--primary-color);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 24px;
+        }
+
+        nav a {
+            font-size: 14px;
+            font-weight: 500;
+            color: var(--text-main);
+        }
+
+        nav a:hover {
+            color: var(--primary-color);
+        }
+
+        .header-cta {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            font-size: 14px;
+            font-weight: 500;
+        }
+
+        .header-cta:hover {
+            background-color: var(--primary-dark);
+        }
+
+        /* Hero Section */
+        .hero {
+            padding: 60px 0;
+            text-align: center;
+            background: linear-gradient(180deg, #ffffff 0%, #f0f4f8 100%);
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            font-weight: 800;
+            margin-bottom: 16px;
+            letter-spacing: -1px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            color: var(--text-secondary);
+            max-width: 600px;
+            margin: 0 auto 32px;
+        }
+
+        .search-box {
+            max-width: 500px;
+            margin: 0 auto;
+            position: relative;
+        }
+
+        .search-box input {
+            width: 100%;
+            padding: 16px 20px;
+            padding-right: 50px;
+            border-radius: 30px;
+            border: 1px solid #d2d2d7;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s;
+        }
+
+        .search-box input:focus {
+            border-color: var(--primary-color);
+            box-shadow: 0 0 0 4px rgba(0, 122, 255, 0.1);
+        }
+
+        .search-box button {
+            position: absolute;
+            right: 6px;
+            top: 6px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Categories */
+        .section-title {
+            font-size: 24px;
+            font-weight: 700;
+            margin: 48px 0 24px;
+            display: flex;
+            align-items: center;
+            gap: 12px;
+        }
+
+        .section-title::after {
+            content: '';
+            flex: 1;
+            height: 1px;
+            background-color: #e5e5e5;
+        }
+
+        .category-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .category-card {
+            background: var(--bg-card);
+            padding: 24px;
+            border-radius: var(--border-radius);
+            text-align: center;
+            box-shadow: var(--shadow-sm);
+            transition: transform 0.2s, box-shadow 0.2s;
+            cursor: pointer;
+        }
+
+        .category-card:hover {
+            transform: translateY(-4px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .cat-icon {
+            font-size: 32px;
+            margin-bottom: 12px;
+            display: block;
+        }
+
+        .cat-title {
+            font-weight: 600;
+            font-size: 16px;
+            margin-bottom: 4px;
+        }
+
+        .cat-desc {
+            font-size: 13px;
+            color: var(--text-secondary);
+        }
+
+        /* Content Grid */
+        .content-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 24px;
+            margin-bottom: 60px;
+        }
+
+        .article-card {
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            overflow: hidden;
+            box-shadow: var(--shadow-sm);
+            display: flex;
+            flex-direction: column;
+            transition: transform 0.2s;
+        }
+
+        .article-card:hover {
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .article-img {
+            height: 180px;
+            background-color: #e0e0e0;
+            position: relative;
+        }
+
+        .article-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .article-tag {
+            position: absolute;
+            top: 12px;
+            left: 12px;
+            background-color: rgba(0,0,0,0.6);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 12px;
+            font-weight: 500;
+        }
+
+        .article-body {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .article-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 8px;
+            line-height: 1.4;
+        }
+
+        .article-excerpt {
+            font-size: 14px;
+            color: var(--text-secondary);
+            margin-bottom: 16px;
+            flex: 1;
+        }
+
+        .article-meta {
+            font-size: 12px;
+            color: #a1a1a6;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        /* Guide Section */
+        .guide-section {
+            background-color: #eef2f5;
+            padding: 60px 0;
+        }
+
+        .guide-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .guide-content h2 {
+            font-size: 32px;
+            margin-bottom: 20px;
+        }
+
+        .guide-content p {
+            color: var(--text-secondary);
+            margin-bottom: 24px;
+        }
+
+        .check-list li {
+            margin-bottom: 12px;
+            display: flex;
+            align-items: start;
+            gap: 10px;
+            font-size: 15px;
+            color: var(--text-main);
+        }
+
+        .check-list svg {
+            width: 20px;
+            height: 20px;
+            flex-shrink: 0;
+            margin-top: 2px;
+            fill: var(--primary-color);
+        }
+
+        .guide-image {
+            background-color: #d1d5db;
+            border-radius: var(--border-radius);
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            font-size: 14px;
+            background-image: url('data:image/svg+xml;utf8,<svg width="100" height="100" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L15.09 8.26L22 9.27L17 14.14L18.18 21.02L12 17.77L5.82 21.02L7 14.14L2 9.27L8.91 8.26L12 2Z" fill="%239CA3AF" fill-opacity="0.2"/></svg>');
+            background-size: 200px;
+            background-position: center;
+        }
+
+        /* FAQ */
+        .faq-item {
+            background: var(--bg-card);
+            border-radius: var(--border-radius);
+            margin-bottom: 16px;
+            box-shadow: var(--shadow-sm);
+            overflow: hidden;
+        }
+
+        .faq-question {
+            padding: 20px;
+            font-weight: 600;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .faq-question::after {
+            content: '+';
+            font-size: 20px;
+            color: var(--primary-color);
+        }
+
+        .faq-item.active .faq-question::after {
+            content: '-';
+        }
+
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            padding: 0 20px;
+            color: var(--text-secondary);
+            font-size: 15px;
+        }
+
+        .faq-item.active .faq-answer {
+            padding-bottom: 20px;
+            max-height: 200px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1d1d1f;
+            color: #f5f5f7;
+            padding: 60px 0 30px;
+            margin-top: 60px;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 40px;
+            margin-bottom: 40px;
+        }
+
+        .footer-brand p {
+            color: #86868b;
+            font-size: 14px;
+            margin-top: 16px;
+            max-width: 300px;
+        }
+
+        .footer-col h4 {
+            font-size: 14px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            color: #f5f5f7;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 12px;
+        }
+
+        .footer-col ul li a {
+            color: #86868b;
+            font-size: 14px;
+        }
+
+        .footer-col ul li a:hover {
+            color: white;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid #333;
+            padding-top: 30px;
+            text-align: center;
+            font-size: 12px;
+            color: #86868b;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 32px;
+            }
+            
+            .header-inner {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav ul {
+                gap: 16px;
+                font-size: 13px;
+            }
+
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .guide-container {
+                grid-template-columns: 1fr;
+            }
+
+            .guide-image {
+                height: 250px;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container header-inner">
+        <a href="#" class="logo">
+            <svg viewBox="0 0 24 24">
+                <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2zm0 2.84L19.16 12H17v7h-2v-6H9v6H7v-7H4.84L12 4.84z"/>
+            </svg>
+            雨伞生活
+        </a>
+        <nav>
+            <ul>
+                <li><a href="#">品牌评测</a></li>
+                <li><a href="#">选购指南</a></li>
+                <li><a href="#">防晒科普</a></li>
+                <li><a href="#">收纳技巧</a></li>
+            </ul>
+        </nav>
+        <a href="#" class="header-cta">寻找你的伞</a>
+    </div>
+</header>
+
+<main class="container">
+    
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>雨天与烈日，从容应对</h1>
+        <p>从防晒到防雨，从通勤到户外，我们提供全方位的打伞指南与装备推荐。</p>
+        <div class="search-box">
+            <input type="text" placeholder="搜索雨伞类型、品牌或功能...">
+            <button type="button">🔍</button>
+        </div>
+    </section>
+
+    <!-- Categories -->
+    <section>
+        <div class="section-title">按场景选购</div>
+        <div class="category-grid">
+            <div class="category-card">
+                <span class="cat-icon">☂️</span>
+                <div class="cat-title">防晒防紫外线</div>
+                <div class="cat-desc">UPF50+ 检测，阻隔99%紫外线</div>
+            </div>
+            <div class="category-card">
+                <span class="cat-icon">🌧️</span>
+                <div class="cat-title">强力防雨</div>
+                <div class="cat-desc">抗风珠设计，大雨天依然滴水不漏</div>
+            </div>
+            <div class="category-card">
+                <span class="cat-icon">🪞</span>
+                <div class="cat-title">透明伞</div>
+                <div class="cat-desc">时尚美观，适合情侣或拍照使用</div>
+            </div>
+            <div class="category-card">
+                <span class="cat-icon">🎒</span>
+                <div class="cat-title">折叠伞</div>
+                <div class="cat-desc">轻便收纳，随身携带无负担</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Articles -->
+    <section>
+        <div class="section-title">精选内容</div>
+        <div class="content-grid">
+            <article class="article-card">
+                <div class="article-img">
+                    <img src="https://picsum.photos/seed/umbrella1/400/250" alt="防晒伞评测">
+                    <span class="article-tag">测评</span>
+                </div>
+                <div class="article-body">
+                    <h3 class="article-title">2024年防晒伞选购指南：如何挑选UPF50+的好伞？</h3>
+                    <p class="article-excerpt">夏季防晒不仅仅是涂防晒霜，一把合格的防晒伞同样重要。本文深度解析黑胶涂层、银胶涂层与纳米涂料的区别。</p>
+                    <div class="article-meta">
+                        <span>阅读 2.4k</span>
+                        <span>3分钟前</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <div class="article-img">
+                    <img src="https://picsum.photos/seed/umbrella2/400/250" alt="透明伞推荐">
+                    <span class="article-tag">推荐</span>
+                </div>
+                <div class="article-body">
+                    <h3 class="article-title">约会必备：高颜值透明伞推荐清单</h3>
+                    <p class="article-excerpt">透明伞不仅能看清路况，更是时尚单品。我们整理了市面上最受欢迎的几款透明伞，涵盖长柄与折叠款式。</p>
+                    <div class="article-meta">
+                        <span>阅读 1.8k</span>
+                        <span>昨天</span>
+                    </div>
+                </div>
+            </article>
+
+            <article class="article-card">
+                <div class="article-img">
+                    <img src="https://picsum.photos/seed/umbrella3/400/250" alt="收纳技巧">
+                    <span class="article-tag">技巧</span>
+                </div>
+                <div class="article-body">
+                    <h3 class="article-title">雨伞收纳与保养：延长使用寿命的秘诀</h3>
+                    <p class="article-excerpt">伞用完怎么收不积水？雨伞生锈了怎么处理？掌握正确的收纳方法，让你的伞多用几年。</p>
+                    <div class="article-meta">
+                        <span>阅读 950</span>
+                        <span>5天前</span>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+    <!-- Guide Section -->
+    <section class="guide-section">
+        <div class="container guide-container">
+            <div class="guide-content">
+                <h2>不同天气的打伞策略</h2>
+                <p>打伞不仅是遮雨，更是对身体的保护。了解不同天气下的打伞技巧，让你既不被淋湿，也不受紫外线伤害。</p>
+                <ul class="check-list">
+                    <li>
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <div>
+                            <strong>紫外线强烈时：</strong> 必须选择带有UPF认证的防晒伞，避开伞骨过稀疏的款式。
+                        </div>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <div>
+                            <strong>大风天气：</strong> 优先选择伞骨数量多、握柄加重的长柄伞，折叠伞容易被风吹翻。
+                        </div>
+                    </li>
+                    <li>
+                        <svg viewBox="0 0 24 24"><path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/></svg>
+                        <div>
+                            <strong>通勤路上：</strong> 建议携带两把伞，一把折叠伞放包里备用，一把长柄伞放在车内或公司。
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div class="guide-image">
+                <div style="text-align: center;">
+                    <div style="font-size: 60px; margin-bottom: 10px;">☔</div>
+                    <div>科学打伞示意图</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ -->
+    <section>
+        <div class="section-title">常见问题解答</div>
+        <div class="faq-list">
+            <div class="faq-item active">
+                <div class="faq-question">防晒伞能防雨吗？</div>
+                <div class="faq-answer">大部分防晒伞都可以防雨，因为它们通常使用防水面料。但是，防晒伞主要目的是阻隔紫外线，其涂层和结构可能不如专业雨伞耐久，长期淋雨可能会影响防晒效果。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">透明伞容易坏吗？</div>
+                <div class="faq-answer">透明伞的伞布通常较薄，且为了透视效果，抗撕裂性可能不如深色伞。如果经常在强风环境下使用，透明伞更容易破损。建议在风力小于4级时使用。</div>
+            </div>
+            <div class="faq-item">
+                <div class="faq-question">如何清洗雨伞？</div>
+                <div class="faq-answer">大多数雨伞只需用清水冲洗即可。如果污渍较重，可以使用温和的洗洁精稀释水轻轻擦拭，然后自然晾干。避免使用硬毛刷刷洗，以免刮伤涂层。</div>
+            </div>
+        </div>
+    </section>
+
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <a href="#" class="logo" style="color: white;">
+                    <svg viewBox="0 0 24 24" style="fill: white;">
+                        <path d="M12 2L2 12h3v8h6v-6h2v6h6v-8h3L12 2zm0 2.84L19.16 12H17v7h-2v-6H9v6H7v-7H4.84L12 4.84z"/>
+                    </svg>
+                    雨伞生活
+                </a>
+                <p>专注提供专业的雨具选购指南、防晒知识科普与生活美学分享。让每一次出行都从容无忧。</p>
+            </div>
+            <div class="footer-col">
+                <h4>选购指南</h4>
+                <ul>
+                    <li><a href="#">防晒伞选购</a></li>
+                    <li><a href="#">长柄伞推荐</a></li>
+                    <li><a href="#">儿童雨伞</a></li>
+                    <li><a href="#">高颜值伞</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>品牌评测</h4>
+                <ul>
+                    <li><a href="#">迪卡侬评测</a></li>
+                    <li><a href="#">蕉下防晒</a></li>
+                    <li><a href="#">天堂伞测评</a></li>
+                    <li><a href="#">优衣库系列</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>关于我们</h4>
+                <ul>
+                    <li><a href="#">联系方式</a></li>
+                    <li><a href="#">投稿指南</a></li>
+                    <li><a href="#">隐私政策</a></li>
+                    <li><a href="#">使用条款</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2024 雨伞生活. All Rights Reserved.
+        </div>
+    </div>
+</footer>
+
+<script>
+    // FAQ Accordion Logic
+    document.addEventListener('DOMContentLoaded', function() {
+        const faqItems = document.querySelectorAll('.faq-item');
+        
+        faqItems.forEach(item => {
+            const question = item.querySelector('.faq-question');
+            question.addEventListener('click', () => {
+                // Close all other items
+                faqItems.forEach(otherItem => {
+                    if (otherItem !== item) {
+                        otherItem.classList.remove('active');
+                    }
+                });
+                // Toggle current item
+                item.classList.toggle('active');
+            });
+        });
+    });
+</script>
+
+</body>
+</html>
