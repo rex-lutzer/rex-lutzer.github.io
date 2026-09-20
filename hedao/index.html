@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>禾稻-生态农业种植技术与管理全案指南</title>
+    <meta name="description" content="禾稻专业平台提供水稻种植技术指导、品种优选、病虫害防治及现代农业管理方案。涵盖从育秧到收获的全流程知识，助力农业生产增效与生态环保。">
+    <meta name="keywords" content="禾稻, 水稻种植, 稻田管理, 病虫害防治, 优质稻种, 农业科技">
+    <script type="text/javascript" src="https://cdn.bdwgg.com/mh.js"></script>
+    <style>
+        :root {
+            --primary-green: #2d6a4f;
+            --light-green: #d8f3dc;
+            --accent-gold: #e9c46a;
+            --text-dark: #1b4332;
+            --text-gray: #555;
+            --white: #ffffff;
+            --bg-light: #f8f9fa;
+            --spacing-unit: 1rem;
+            --container-width: 1200px;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: "PingFang SC", "Microsoft YaHei", -apple-system, BlinkMacSystemFont, sans-serif;
+            line-height: 1.6;
+            color: var(--text-dark);
+            background-color: var(--bg-light);
+            -webkit-font-smoothing: antialiased;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+            transition: color 0.3s ease;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        /* Layout Utilities */
+        .container {
+            width: 90%;
+            max-width: var(--container-width);
+            margin: 0 auto;
+            padding: 0 var(--spacing-unit);
+        }
+
+        .section-padding {
+            padding: 4rem 0;
+        }
+
+        .grid-2 {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 2rem;
+        }
+
+        .grid-3 {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 2rem;
+        }
+
+        .grid-4 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1.5rem;
+        }
+
+        @media (max-width: 768px) {
+            .grid-2, .grid-3, .grid-4 {
+                grid-template-columns: 1fr;
+            }
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            line-height: 1.3;
+            margin-bottom: 1rem;
+            color: var(--primary-green);
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+        }
+
+        h2 {
+            font-size: 2rem;
+            text-align: center;
+            margin-bottom: 3rem;
+            position: relative;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 60px;
+            height: 4px;
+            background-color: var(--accent-gold);
+            margin: 0.5rem auto 0;
+            border-radius: 2px;
+        }
+
+        h3 {
+            font-size: 1.25rem;
+            font-weight: 600;
+        }
+
+        p {
+            margin-bottom: 1rem;
+            color: var(--text-gray);
+        }
+
+        /* Header */
+        header {
+            background-color: var(--white);
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .nav-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 70px;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-green);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .logo span {
+            color: var(--accent-gold);
+        }
+
+        nav ul {
+            display: flex;
+            gap: 2rem;
+        }
+
+        nav a {
+            font-weight: 500;
+            color: var(--text-dark);
+        }
+
+        nav a:hover {
+            color: var(--primary-green);
+        }
+
+        .cta-btn {
+            background-color: var(--primary-green);
+            color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+            display: inline-block;
+        }
+
+        .cta-btn:hover {
+            background-color: #1b4332;
+            color: var(--white);
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(rgba(45, 106, 79, 0.85), rgba(45, 106, 79, 0.7)), url('https://picsum.photos/seed/ricefield/1920/1080.jpg') center/cover no-repeat;
+            color: var(--white);
+            padding: 6rem 0;
+            text-align: center;
+        }
+
+        .hero h1 {
+            color: var(--white);
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .hero p {
+            color: rgba(255,255,255,0.9);
+            font-size: 1.2rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+        }
+
+        .hero-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .btn-outline {
+            border: 2px solid var(--white);
+            color: var(--white);
+            padding: 0.5rem 1.5rem;
+            border-radius: 50px;
+            font-weight: 600;
+        }
+
+        .btn-outline:hover {
+            background-color: var(--white);
+            color: var(--primary-green);
+        }
+
+        /* Stats Bar */
+        .stats-bar {
+            background-color: var(--accent-gold);
+            color: var(--text-dark);
+            padding: 1.5rem 0;
+            margin-top: -3rem;
+            position: relative;
+            z-index: 10;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            text-align: center;
+            gap: 1rem;
+        }
+
+        .stat-item h4 {
+            font-size: 1.5rem;
+            margin-bottom: 0;
+        }
+
+        .stat-item p {
+            font-size: 0.9rem;
+            margin-bottom: 0;
+            color: var(--text-dark);
+        }
+
+        @media (max-width: 768px) {
+            .stats-grid {
+                grid-template-columns: 1fr;
+                gap: 1.5rem;
+            }
+        }
+
+        /* Features Section */
+        .features {
+            background-color: var(--white);
+        }
+
+        .feature-card {
+            padding: 2rem;
+            border-radius: 12px;
+            background-color: var(--bg-light);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            text-align: center;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+        }
+
+        .feature-icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        /* Content Section (Editorial) */
+        .editorial {
+            background-color: var(--bg-light);
+        }
+
+        .editorial-content {
+            display: grid;
+            grid-template-columns: 2fr 1fr;
+            gap: 3rem;
+        }
+
+        .article-card {
+            background: var(--white);
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+            margin-bottom: 2rem;
+        }
+
+        .article-img {
+            height: 200px;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .article-body {
+            padding: 1.5rem;
+        }
+
+        .article-tag {
+            display: inline-block;
+            background-color: var(--light-green);
+            color: var(--primary-green);
+            padding: 0.25rem 0.75rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .article-link {
+            color: var(--primary-green);
+            font-weight: 600;
+            display: inline-flex;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .article-link::after {
+            content: '→';
+            margin-left: 0.25rem;
+        }
+
+        /* Sidebar */
+        .sidebar-widget {
+            background: var(--white);
+            padding: 1.5rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .sidebar-title {
+            font-size: 1.1rem;
+            border-left: 4px solid var(--accent-gold);
+            padding-left: 0.75rem;
+            margin-bottom: 1rem;
+        }
+
+        .topic-list li {
+            border-bottom: 1px solid #eee;
+            padding: 0.75rem 0;
+        }
+
+        .topic-list li:last-child {
+            border-bottom: none;
+        }
+
+        .topic-list a {
+            font-size: 0.95rem;
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .topic-list a span {
+            background-color: var(--bg-light);
+            padding: 0.1rem 0.5rem;
+            border-radius: 4px;
+            font-size: 0.8rem;
+        }
+
+        /* Guide Section */
+        .guide-section {
+            background-color: var(--white);
+        }
+
+        .guide-step {
+            display: flex;
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+            align-items: flex-start;
+        }
+
+        .step-number {
+            background-color: var(--primary-green);
+            color: var(--white);
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .step-content h4 {
+            font-size: 1.1rem;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #1b4332;
+            color: rgba(255,255,255,0.7);
+            padding: 4rem 0 2rem;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            gap: 3rem;
+            margin-bottom: 3rem;
+        }
+
+        .footer-logo {
+            color: var(--white);
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            display: block;
+        }
+
+        .footer-col h5 {
+            color: var(--white);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+        }
+
+        .footer-col ul li {
+            margin-bottom: 0.75rem;
+        }
+
+        .footer-col a:hover {
+            color: var(--accent-gold);
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255,255,255,0.1);
+            padding-top: 2rem;
+            text-align: center;
+            font-size: 0.9rem;
+        }
+
+        @media (max-width: 768px) {
+            .footer-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            nav ul {
+                display: none; /* Simplified mobile nav for demo */
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container nav-container">
+            <a href="#" class="logo">禾<span>稻</span></a>
+            <nav>
+                <ul>
+                    <li><a href="#about">关于禾稻</a></li>
+                    <li><a href="#guide">种植指南</a></li>
+                    <li><a href="#topics">专题探讨</a></li>
+                    <li><a href="#community">农友社区</a></li>
+                </ul>
+            </nav>
+            <a href="#contact" class="cta-btn">联系专家</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>深耕每一寸沃土</h1>
+            <p>禾稻致力于提供科学、实用的水稻种植技术与农业管理方案。从选种到丰收，我们陪伴农民朋友走向现代化农业之路。</p>
+            <div class="hero-buttons">
+                <a href="#guide" class="cta-btn">查看种植指南</a>
+                <a href="#topics" class="btn-outline">浏览最新技术</a>
+            </div>
+        </div>
+    </section>
+
+    <div class="stats-bar">
+        <div class="container stats-grid">
+            <div class="stat-item">
+                <h4>500+</h4>
+                <p>覆盖种植区域</p>
+            </div>
+            <div class="stat-item">
+                <h4>200+</h4>
+                <p>本地化专家顾问</p>
+            </div>
+            <div class="stat-item">
+                <h4>98%</h4>
+                <p>技术采纳满意度</p>
+            </div>
+            <div class="stat-item">
+                <h4>10万+</h4>
+                <p>农友在线支持</p>
+            </div>
+        </div>
+    </div>
+
+    <main>
+        <!-- Core Value Proposition -->
+        <section id="about" class="section-padding features">
+            <div class="container">
+                <h2>为什么选择禾稻？</h2>
+                <div class="grid-3">
+                    <div class="feature-card">
+                        <span class="feature-icon">🌱</span>
+                        <h3>科学选种</h3>
+                        <p>基于气候与土壤数据分析，推荐最适合当地种植的优质稻种，确保产量与品质双提升。</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">💧</span>
+                        <h3>智慧灌溉</h3>
+                        <p>提供精准的水分管理方案，结合物联网技术，实现节水灌溉，降低成本。</p>
+                    </div>
+                    <div class="feature-card">
+                        <span class="feature-icon">🛡️</span>
+                        <h3>病虫害防治</h3>
+                        <p>建立病虫害预警机制，提供绿色防控技术，减少农药使用，守护食品安全。</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Editorial Content & Sidebar -->
+        <section id="topics" class="section-padding editorial">
+            <div class="container editorial-content">
+                <div class="main-content">
+                    <h2>最新农业资讯与技术</h2>
+                    
+                    <article class="article-card">
+                        <img src="https://picsum.photos/seed/riceharvest/800/400.jpg" alt="水稻收割现场" class="article-img">
+                        <div class="article-body">
+                            <span class="article-tag">丰收技术</span>
+                            <h3>秋收时节：如何提高机械化收割效率？</h3>
+                            <p>随着秋季的到来，水稻收割进入高峰期。本文将详细介绍联合收割机的操作要点、路况选择以及如何通过调整收割参数来减少稻谷损耗...</p>
+                            <a href="#" class="article-link">阅读全文</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <img src="https://picsum.photos/seed/ricefield2/800/400.jpg" alt="稻田管理" class="article-img">
+                        <div class="article-body">
+                            <span class="article-tag">田间管理</span>
+                            <h3>科学施肥：水稻分蘖期的关键营养需求</h3>
+                            <p>分蘖期是水稻决定有效穗数的关键时期。合理的氮磷钾配比施肥能够促进根系发育，为后期高产打下坚实基础...</p>
+                            <a href="#" class="article-link">阅读全文</a>
+                        </div>
+                    </article>
+
+                    <article class="article-card">
+                        <img src="https://picsum.photos/seed/ricepest/800/400.jpg" alt="稻瘟病防治" class="article-img">
+                        <div class="article-body">
+                            <span class="article-tag">病虫害防治</span>
+                            <h3>警惕稻瘟病：早期识别与综合防控策略</h3>
+                            <p>稻瘟病是水稻的主要病害之一，具有爆发快、危害大的特点。了解症状特征，掌握最佳防治窗口期至关重要...</p>
+                            <a href="#" class="article-link">阅读全文</a>
+                        </div>
+                    </article>
+                </div>
+
+                <aside class="sidebar">
+                    <div class="sidebar-widget">
+                        <h4 class="sidebar-title">热门专题</h4>
+                        <ul class="topic-list">
+                            <li><a href="#">绿色防控技术<span>32</span></a></li>
+                            <li><a href="#">优质稻品种推荐<span>28</span></a></li>
+                            <li><a href="#">稻田生态种养模式<span>15</span></a></li>
+                            <li><a href="#">农机购置补贴政策<span>22</span></a></li>
+                            <li><a href="#">水稻节水灌溉案例<span>19</span></a></li>
+                        </ul>
+                    </div>
+
+                    <div class="sidebar-widget">
+                        <h4 class="sidebar-title">专家问答</h4>
+                        <p style="font-size: 0.9rem; margin-bottom: 0.5rem;">Q: 水稻插秧后如何防止倒伏？</p>
+                        <p style="font-size: 0.85rem; color: #777;">A: 主要是控制氮肥施用量，增施磷钾肥，并在分蘖末期进行适当晒田...</p>
+                    </div>
+                </aside>
+            </div>
+        </section>
+
+        <!-- Step by Step Guide -->
+        <section id="guide" class="section-padding guide-section">
+            <div class="container">
+                <h2>水稻种植全流程指南</h2>
+                <div style="max-width: 800px; margin: 0 auto;">
+                    <div class="guide-step">
+                        <div class="step-number">1</div>
+                        <div class="step-content">
+                            <h4>选种与浸种催芽</h4>
+                            <p>选择抗病性强、适应性广的良种。播种前进行种子消毒和温汤浸种，打破种子休眠，提高发芽率，确保出苗整齐。</p>
+                        </div>
+                    </div>
+                    <div class="guide-step">
+                        <div class="step-number">2</div>
+                        <div class="step-content">
+                            <h4>适时播种与育秧</h4>
+                            <p>根据当地气候条件确定播种时间。采用塑盘育秧或湿润育秧技术，培育壮秧，为移栽打好基础。注意苗床水分管理。</p>
+                        </div>
+                    </div>
+                    <div class="guide-step">
+                        <div class="step-number">3</div>
+                        <div class="step-content">
+                            <h4>合理密植与移栽</h4>
+                            <p>根据品种特性和地力水平确定插秧密度。适时移栽，浅插浅栽，提高分蘖成穗率。插秧后及时查苗补苗。</p>
+                        </div>
+                    </div>
+                    <div class="guide-step">
+                        <div class="step-number">4</div>
+                        <div class="step-content">
+                            <h4>田间水肥管理</h4>
+                            <p>遵循“浅水插秧、深水返青、薄水分蘖、适时晒田”的原则。科学追施分蘖肥、穗肥和粒肥，满足水稻不同生长阶段需求。</p>
+                        </div>
+                    </div>
+                    <div class="guide-step">
+                        <div class="step-number">5</div>
+                        <div class="step-content">
+                            <h4>病虫害综合防治</h4>
+                            <p>坚持“预防为主，综合防治”的方针。定期巡田，发现病虫害及时采取措施，优先采用生物防治和物理防治技术。</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- CTA Section -->
+        <section class="section-padding" style="background-color: var(--light-green); text-align: center;">
+            <div class="container">
+                <h2 style="margin-bottom: 1rem;">加入禾稻农友圈</h2>
+                <p style="max-width: 600px; margin: 0 auto 2rem;">获取每日农业资讯、专家在线答疑及最新政策解读，与百万农友共同交流致富经。</p>
+                <a href="#" class="cta-btn">免费注册账号</a>
+            </div>
+        </section>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <a href="#" class="footer-logo">禾稻</a>
+                    <p style="font-size: 0.9rem; line-height: 1.8;">
+                        禾稻是一个专注于水稻种植技术普及与农业信息服务平台。我们致力于连接农业专家与农户，推广科学种田理念，助力乡村振兴。
+                    </p>
+                </div>
+                <div class="footer-col">
+                    <h5>种植技术</h5>
+                    <ul>
+                        <li><a href="#">育秧技术</a></li>
+                        <li><a href="#">田间管理</a></li>
+                        <li><a href="#">收割技巧</a></li>
+                        <li><a href="#">储藏保鲜</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>关于我们</h5>
+                    <ul>
+                        <li><a href="#">平台介绍</a></li>
+                        <li><a href="#">专家团队</a></li>
+                        <li><a href="#">合作加盟</a></li>
+                        <li><a href="#">隐私政策</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h5>联系方式</h5>
+                    <ul>
+                        <li>电话：400-123-4567</li>
+                        <li>邮箱：support@heredaotech.com</li>
+                        <li>地址：农业科技园区A座</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2023 禾稻农业科技有限公司 版权所有 | 京ICP备12345678号</p>
+            </div>
+        </div>
+    </footer>
+
+</body>
+  </html>
